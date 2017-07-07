@@ -1,5 +1,9 @@
 # [KSYAirStreamer iOS SDK](https://ksvc.github.io/KSYAirStreamer_iOS/html/index.html)
 
+[![Build Status](https://travis-ci.org/ksvc/KSYAirStreamer_iOS.svg?branch=master)](https://travis-ci.org/ksvc/KSYAirStreamer_iOS)
+[![CocoaPods platform](https://img.shields.io/cocoapods/p/KSYAirStreamer.svg)](https://cocoapods.org/pods/KSYAirStreamer)
+[![CocoaPods version](https://img.shields.io/cocoapods/v/KSYAirStreamer.svg?label=pod_github)](https://cocoapods.org/pods/KSYAirStreamer)
+
 ## 一. 功能特性
 
 [金山云录屏直播SDK][KSYAirStreamer]是金山云提供的直播解决方案的一部分，完成了iOS端全屏录制的功能，主要实现思路是本SDK内实现了一个Airplay的接收端, 开始录屏时iOS系统与SDK建立连接, SDK收到画面后, 编码发送到直播服务器. 其中编码和推流功能使用[金山云直播SDK][1]实现.
