@@ -6,7 +6,9 @@
 
 ## 一. 功能特性
 
-[金山云录屏直播SDK][KSYAirStreamer]是金山云提供的直播解决方案的一部分，完成了iOS端全屏录制的功能，主要实现思路是本SDK内实现了一个Airplay的接收端, 开始录屏时iOS系统与SDK建立连接, SDK收到画面后, 编码发送到直播服务器. 其中编码和推流功能使用[金山云直播SDK][1]实现.
+[金山云录屏直播SDK][KSYAirStreamer]是金山云提供的直播解决方案的一部分，完成了iOS端全屏录制的功能，主要实现思路是本SDK内实现了一个Airplay的接收端, 开始录屏时iOS系统与SDK建立连接, SDK收到画面后, 编码发送到直播服务器. 其中编码和推流功能使用[金山云直播SDK][libksygpulive]实现.
+
+可以用于手游等直播录制场景。
 
 ### 1.1 录屏功能
 - [x] iOS8/9/10 支持
@@ -15,7 +17,17 @@
 ### 1.2 关于上架
 根据Apple的政策, 含有Airplay功能的APP无法通过App Store审查, 请注意.
 
-## 二. SDK集成方法介绍   
+### 1.3 费用
+当前版本使用联网解密，因为网络原因或者服务器抖动，会导致录屏失败。当前评估版本可以免费集成和试用。
+本评估版本不限制使用并发数。
+
+请勿集成并上线，因为网络原因导致的功能不可用，[金山云][ksyun]不承担任何责任。
+
+如果需要商业使用，请联系[金山云商务][ksyun]获取离线解密版本。离线版本使用过程中不会发生联网行为，可以稳定用于商业应用。
+
+商业版本费用，请咨询[金山云商务][ksyun]。
+
+## 二. SDK集成方法介绍   
 ### 2.1 系统要求    
 * 最低支持iOS版本：iOS 8.0
 * 最低支持iPhone型号：iPhone 5
@@ -79,4 +91,6 @@ $ open KSYAirStreame.xcworkspace
 
 <a href="http://www.ksyun.com/"><img src="https://raw.githubusercontent.com/wiki/ksvc/KSYLive_Android/images/logo.png" border="0" alt="金山云计算" /></a>
 
-[1]:https://github.com/ksvc/KSYLive_iOS
+[libksygpulive]:https://github.com/ksvc/KSYLive_iOS
+[KSYAirStreamer]:https://github.com/ksvc/KSYAirStreamer_iOS
+[ksyun]:http://www.ksyun.com
