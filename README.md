@@ -1,4 +1,4 @@
-# KSYAirStreamer iOS SDK
+# [KSYAirStreamer iOS SDK](https://ksvc.github.io/KSYAirStreamer_iOS/html/index.html)
 
 ## 一. 功能特性
 
@@ -24,8 +24,7 @@
 #### 2.2.1 从[github](https://github.com/ksvc/KSYAirStreamer_iOS) clone
 目录结构如下所示:
 - demo        : demo工程演示本SDK的主要接口的使用
-- doc/docset  : appleDoc风格的接口文档，安装后可在xcode中直接看到方法和属性的文档
-- doc/html    : appleDoc风格的网页版接口文档
+- docs/html   : appleDoc风格的网页版接口文档
 - prebuilt    : 预编译库的头文件和库文件
 - source      : 顶层kit类的源代码
 
@@ -66,7 +65,7 @@ $ open KSYAirStreame.xcworkspace
 
 ## 三. 参考文档
 wiki: https://github.com/ksvc/KSYAirStreamer_iOS/wiki
-doc: https://github.com/ksvc/KSYAirStreamer_iOS/
+API 文档: https://ksvc.github.io/KSYAirStreamer_iOS/html/index.html
 
 ## 四. 反馈与建议
 * 主页：[金山云](http://www.ksyun.com/)
