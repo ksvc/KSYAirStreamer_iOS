@@ -64,8 +64,8 @@ $ open KSYAirStreame.xcworkspace
 ```
 
 ## 三. 参考文档
-wiki: https://github.com/ksvc/KSYAirStreamer_iOS/wiki
-API 文档: https://ksvc.github.io/KSYAirStreamer_iOS/html/index.html
+* wiki: https://github.com/ksvc/KSYAirStreamer_iOS/wiki
+* API 文档: https://ksvc.github.io/KSYAirStreamer_iOS/html/index.html
 
 ## 四. 反馈与建议
 * 主页：[金山云](http://www.ksyun.com/)
