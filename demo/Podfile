@@ -1,0 +1,13 @@
+inhibit_all_warnings!
+install! 'cocoapods', :deterministic_uuids => false
+use_frameworks!
+
+target 'KSYAirStreamer_Example' do
+  pod 'GPUImage'
+  pod 'libksygpulive/libksygpulive', '~> 2.4.0'
+  pod 'KSYAirStreamer',  :path => '../'
+
+  target 'KSYAirStreamer_Tests' do
+    inherit! :search_paths
+  end
+end
