@@ -65,6 +65,9 @@
 
 - (IBAction)onBtnPress:(id)sender {
     if (sender == _airView.btn) {
+        if (_kit == nil) {
+            return;
+        }
         _airView.btn.selected = !_airView.btn.selected;
         if (_airView.btn.selected) {
             _kit.airCfg = [_airView airCfg];
@@ -87,6 +90,9 @@
 - (void) onStreamStateChange {
     if (_kit.streamerBase){
         _airView.strState = [_kit.streamerBase getCurStreamStateName];
+        if (_kit.streamerBase.streamState == KSYStreamStateError) {
+            _airView.strState = [_kit.streamerBase getCurKSYStreamErrorCodeName];
+        }
         NSLog(@"stream State %@", _airView.strState);
     }
 }
