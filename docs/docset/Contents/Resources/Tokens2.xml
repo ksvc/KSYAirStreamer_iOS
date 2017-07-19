@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KSYAirTunesConfig.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KSYAirTunesConfig</TokenIdentifier>
+			<Abstract type="html">airplay的配置信息</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setAirplayName:</TokenIdentifier>
+			<Abstract type="html">AirPlay 设备的名字</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *airplayName</Declaration>
+			
+			
+			<Anchor>//api/name/airplayName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/airplayName</TokenIdentifier>
+			<Abstract type="html">AirPlay 设备的名字</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *airplayName</Declaration>
+			
+			
+			<Anchor>//api/name/airplayName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/airplayName</TokenIdentifier>
+			<Abstract type="html">AirPlay 设备的名字</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *airplayName</Declaration>
+			
+			
+			<Anchor>//api/name/airplayName</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setVideoSize:</TokenIdentifier>
+			<Abstract type="html">接收设备的尺寸(竖屏时高度为videoSize, 宽度根据屏幕比例计算得到,横屏时反之)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int videoSize</Declaration>
+			
+			
+			<Anchor>//api/name/videoSize</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/videoSize</TokenIdentifier>
+			<Abstract type="html">接收设备的尺寸(竖屏时高度为videoSize, 宽度根据屏幕比例计算得到,横屏时反之)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int videoSize</Declaration>
+			
+			
+			<Anchor>//api/name/videoSize</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/videoSize</TokenIdentifier>
+			<Abstract type="html">接收设备的尺寸(竖屏时高度为videoSize, 宽度根据屏幕比例计算得到,横屏时反之)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int videoSize</Declaration>
+			
+			
+			<Anchor>//api/name/videoSize</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setFramerate:</TokenIdentifier>
+			<Abstract type="html">希望接收到ios发送端的视频帧率 默认30</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int framerate</Declaration>
+			
+			
+			<Anchor>//api/name/framerate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/framerate</TokenIdentifier>
+			<Abstract type="html">希望接收到ios发送端的视频帧率 默认30</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int framerate</Declaration>
+			
+			
+			<Anchor>//api/name/framerate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/framerate</TokenIdentifier>
+			<Abstract type="html">希望接收到ios发送端的视频帧率 默认30</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int framerate</Declaration>
+			
+			
+			<Anchor>//api/name/framerate</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setAirTunesPort:</TokenIdentifier>
+			<Abstract type="html">设置airtunes 服务的监听端口, 0 表示系统自动分配</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) short airTunesPort</Declaration>
+			
+			
+			<Anchor>//api/name/airTunesPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/airTunesPort</TokenIdentifier>
+			<Abstract type="html">设置airtunes 服务的监听端口, 0 表示系统自动分配</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) short airTunesPort</Declaration>
+			
+			
+			<Anchor>//api/name/airTunesPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/airTunesPort</TokenIdentifier>
+			<Abstract type="html">设置airtunes 服务的监听端口, 0 表示系统自动分配</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) short airTunesPort</Declaration>
+			
+			
+			<Anchor>//api/name/airTunesPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setAirVideoPort:</TokenIdentifier>
+			<Abstract type="html">设置视频数据的接收端口，默认是7100, 当7100被占用时, 会尝试+1 尝试10次, 如果仍然失败报告端口冲突</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) short airVideoPort</Declaration>
+			
+			
+			<Anchor>//api/name/airVideoPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/airVideoPort</TokenIdentifier>
+			<Abstract type="html">设置视频数据的接收端口，默认是7100, 当7100被占用时, 会尝试+1 尝试10次, 如果仍然失败报告端口冲突</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) short airVideoPort</Declaration>
+			
+			
+			<Anchor>//api/name/airVideoPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/airVideoPort</TokenIdentifier>
+			<Abstract type="html">设置视频数据的接收端口，默认是7100, 当7100被占用时, 会尝试+1 尝试10次, 如果仍然失败报告端口冲突</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) short airVideoPort</Declaration>
+			
+			
+			<Anchor>//api/name/airVideoPort</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setMacAddr:</TokenIdentifier>
+			<Abstract type="html">设备的mac地址, 默认随机生成,(长度为6字节)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSData *macAddr</Declaration>
+			
+			
+			<Anchor>//api/name/macAddr</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/macAddr</TokenIdentifier>
+			<Abstract type="html">设备的mac地址, 默认随机生成,(长度为6字节)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSData *macAddr</Declaration>
+			
+			
+			<Anchor>//api/name/macAddr</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/macAddr</TokenIdentifier>
+			<Abstract type="html">设备的mac地址, 默认随机生成,(长度为6字节)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSData *macAddr</Declaration>
+			
+			
+			<Anchor>//api/name/macAddr</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KSYAirStreamKit.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KSYAirStreamKit</TokenIdentifier>
+			<Abstract type="html">airplay 镜像录屏 + KSYStreamerBase 推流</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/initWithToken:error:</TokenIdentifier>
+			<Abstract type="html">带鉴权的构造接收server实例</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithToken:(NSString *)token error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>token</Name>
+					<Abstract type="html">鉴权信息, 请联系商务获取</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">鉴权过程中的错误信息</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">新构造的实例</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithToken:error:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/setAirTunesServer:</TokenIdentifier>
+			<Abstract type="html">airplay 接受端</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAirTunesServer *airTunesServer</Declaration>
+			
+			
+			<Anchor>//api/name/airTunesServer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/airTunesServer</TokenIdentifier>
+			<Abstract type="html">airplay 接受端</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAirTunesServer *airTunesServer</Declaration>
+			
+			
+			<Anchor>//api/name/airTunesServer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirStreamKit/airTunesServer</TokenIdentifier>
+			<Abstract type="html">airplay 接受端</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAirTunesServer *airTunesServer</Declaration>
+			
+			
+			<Anchor>//api/name/airTunesServer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/setAirCfg:</TokenIdentifier>
+			<Abstract type="html">airplay 配置信息</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAirTunesConfig *airCfg</Declaration>
+			
+			
+			<Anchor>//api/name/airCfg</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/airCfg</TokenIdentifier>
+			<Abstract type="html">airplay 配置信息</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAirTunesConfig *airCfg</Declaration>
+			
+			
+			<Anchor>//api/name/airCfg</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirStreamKit/airCfg</TokenIdentifier>
+			<Abstract type="html">airplay 配置信息</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAirTunesConfig *airCfg</Declaration>
+			
+			
+			<Anchor>//api/name/airCfg</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/setACapDev:</TokenIdentifier>
+			<Abstract type="html">麦克风采集设备</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAudioCap *aCapDev</Declaration>
+			
+			
+			<Anchor>//api/name/aCapDev</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/aCapDev</TokenIdentifier>
+			<Abstract type="html">麦克风采集设备</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAudioCap *aCapDev</Declaration>
+			
+			
+			<Anchor>//api/name/aCapDev</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirStreamKit/aCapDev</TokenIdentifier>
+			<Abstract type="html">麦克风采集设备</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAudioCap *aCapDev</Declaration>
+			
+			
+			<Anchor>//api/name/aCapDev</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/setAMixer:</TokenIdentifier>
+			<Abstract type="html">音频mixer (音频buffer)</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAudioMixer *aMixer</Declaration>
+			
+			
+			<Anchor>//api/name/aMixer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/aMixer</TokenIdentifier>
+			<Abstract type="html">音频mixer (音频buffer)</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAudioMixer *aMixer</Declaration>
+			
+			
+			<Anchor>//api/name/aMixer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirStreamKit/aMixer</TokenIdentifier>
+			<Abstract type="html">音频mixer (音频buffer)</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYAudioMixer *aMixer</Declaration>
+			
+			
+			<Anchor>//api/name/aMixer</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/setStreamUrl:</TokenIdentifier>
+			<Abstract type="html">rtmp 推流地址</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property NSString *streamUrl</Declaration>
+			
+			
+			<Anchor>//api/name/streamUrl</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/streamUrl</TokenIdentifier>
+			<Abstract type="html">rtmp 推流地址</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property NSString *streamUrl</Declaration>
+			
+			
+			<Anchor>//api/name/streamUrl</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirStreamKit/streamUrl</TokenIdentifier>
+			<Abstract type="html">rtmp 推流地址</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property NSString *streamUrl</Declaration>
+			
+			
+			<Anchor>//api/name/streamUrl</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/setVideoBitrate:</TokenIdentifier>
+			<Abstract type="html">rtmp 推流视频码率</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property int videoBitrate</Declaration>
+			
+			
+			<Anchor>//api/name/videoBitrate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/videoBitrate</TokenIdentifier>
+			<Abstract type="html">rtmp 推流视频码率</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property int videoBitrate</Declaration>
+			
+			
+			<Anchor>//api/name/videoBitrate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirStreamKit/videoBitrate</TokenIdentifier>
+			<Abstract type="html">rtmp 推流视频码率</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property int videoBitrate</Declaration>
+			
+			
+			<Anchor>//api/name/videoBitrate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/setStreamerBase:</TokenIdentifier>
+			<Abstract type="html">rtmp 推流</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYStreamerBase *streamerBase</Declaration>
+			
+			
+			<Anchor>//api/name/streamerBase</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/streamerBase</TokenIdentifier>
+			<Abstract type="html">rtmp 推流</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYStreamerBase *streamerBase</Declaration>
+			
+			
+			<Anchor>//api/name/streamerBase</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirStreamKit/streamerBase</TokenIdentifier>
+			<Abstract type="html">rtmp 推流</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property KSYStreamerBase *streamerBase</Declaration>
+			
+			
+			<Anchor>//api/name/streamerBase</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/setDelegate:</TokenIdentifier>
+			<Abstract type="html">录制过程的代理</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;KSYAirDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/delegate</TokenIdentifier>
+			<Abstract type="html">录制过程的代理</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;KSYAirDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirStreamKit/delegate</TokenIdentifier>
+			<Abstract type="html">录制过程的代理</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;KSYAirDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/startService</TokenIdentifier>
+			<Abstract type="html">启动镜像服务, 当成功建立airplay镜像连接时, 再启动音频采集和推流</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>- (void)startService</Declaration>
+			
+			
+			<Anchor>//api/name/startService</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirStreamKit/stopService</TokenIdentifier>
+			<Abstract type="html">停止镜像服务</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+			
+			<Declaration>- (void)stopService</Declaration>
+			
+			
+			<Anchor>//api/name/stopService</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

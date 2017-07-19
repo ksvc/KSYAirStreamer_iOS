@@ -18,6 +18,8 @@ typedef NS_ENUM(NSUInteger, KSYAirErrorCode) {
     KSYAirErrorCodeNetworkDisconnection,
     /// 连接AirPlay超时
     KSYAirErrorCodeAirPlaySelectTimeout,
+    /// 连接失败
+    KSYAirErrorCodeConnectFailed,
     /// 连接断开
     KSYAirErrorCodeConnectBreak,
     /// 其他错误
@@ -99,6 +101,16 @@ typedef NS_ENUM(NSUInteger, KSYAirState) {
 @interface KSYAirTunesServer : NSObject
 
 /**
+ 带鉴权的构造接收server实例
+
+ @param token 鉴权信息, 请联系商务获取
+ @param error 鉴权过程中的错误信息
+ @return 新构造的实例
+ */
+- (instancetype) initWithToken:(NSString*) token
+                         error:(NSError**) error;
+
+/**
  获取屏幕画面的回调
  */
 @property(nonatomic, copy) void(^videoProcessingCallback)(CVPixelBufferRef pixelBuffer, CMTime timeInfo );
@@ -135,5 +147,5 @@ typedef NS_ENUM(NSUInteger, KSYAirState) {
 
 @end
 
-#define KSYAIRSTREAMER_VER 0.1.0
-#define KSYAIRSTREAMER_ID  19bbdd453a06de17e9278b9fa828a6b86326e7a4
+#define KSYAIRSTREAMER_VER 1.0.0
+#define KSYAIRSTREAMER_ID  f57485d0c2bce2d20ef7691160cbc572481075a8

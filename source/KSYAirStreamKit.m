@@ -25,25 +25,32 @@
 
 @implementation KSYAirStreamKit
 
+
 - (id) init {
+    return [self initWithToken:nil error:nil];
+}
+/**
+ 带鉴权的构造接收server实例
+ 
+ @param token 鉴权信息, 请联系商务获取
+ @param error 鉴权过程中的错误信息
+ @return 新构造的实例
+ */
+- (instancetype) initWithToken:(NSString*) token
+                         error:(NSError**) error {
     self = [super init];
     if (self == nil) {
         return nil;
     }
-    _autoRetryCnt    = 0;
-    _maxAutoRetry    = 5;
-    _bRetry          = NO;
-    
-    NSNotificationCenter* dc = [NSNotificationCenter defaultCenter];
-    [dc addObserver:self
-           selector:@selector(onNetStateEvent)
-               name:KSYNetStateEventNotification
-             object:nil];
-    [self setup];
-    return self;
-}
-- (void) setup{
-    _airTunesServer = [[KSYAirTunesServer alloc] init];
+    NSError * outErr = nil;
+    _airTunesServer = [[KSYAirTunesServer alloc] initWithToken:token error:&outErr];
+    if (outErr) {
+        if(error){
+            *error = outErr;
+        }
+        self = nil;
+        return nil;
+    }
     _streamerBase   = [[KSYStreamerBase alloc] init];
     _aMixer         = [[KSYAudioMixer alloc] init];
     _aMixer.mainTrack = 0;
@@ -60,6 +67,17 @@
     _streamerBase.streamStateChange = ^(KSYStreamState state) {
         [weakSelf onStreamStateChange:state];
     };
+    
+    _autoRetryCnt    = 0;
+    _maxAutoRetry    = 5;
+    _bRetry          = NO;
+    
+    NSNotificationCenter* dc = [NSNotificationCenter defaultCenter];
+    [dc addObserver:self
+           selector:@selector(onNetStateEvent)
+               name:KSYNetStateEventNotification
+             object:nil];
+    return self;
 }
 - (void) dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];

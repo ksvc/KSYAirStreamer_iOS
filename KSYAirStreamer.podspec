@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KSYAirStreamer'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'airplay receiver => rtmp streamer'
 
   s.description      = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.author           = { 'pengbins' => 'pengbin@kingsoft.com' }
   s.source           = {
       :git => 'https://github.com/ksvc/KSYAirStreamer_iOS.git',
-      :tag => 'v'+s.version.to_s
+      :tag => s.version.to_s
   }
   s.requires_arc = true
   s.ios.library = 'z', 'iconv', 'stdc++.6', 'bz2'
@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.source_files =  ['prebuilt/include/**/*.h','source/*.{h,m}']
   s.vendored_library = 'prebuilt/libs/libksyairserver.a'
+  #s.vendored_library = 'prebuilt/libs/libksyairserver_auth.a'
   s.dependency 'libksygpulive/libksygpulive'
   s.dependency 'CocoaAsyncSocket'
 end

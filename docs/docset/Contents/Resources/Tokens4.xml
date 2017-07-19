@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/KSYAudioCap.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/KSYAudioCap</TokenIdentifier>
+			<Abstract type="html">音频采集模块, 主要是重写 isHeadsetPluggedIn方法, 避免音频采集的问题</Abstract>
+			<DeclaredIn>KSYAirStreamKit.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+        
+        
+	</File>
+</Tokens>

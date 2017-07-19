@@ -22,6 +22,16 @@
  */
 @interface KSYAirStreamKit : NSObject
 
+/**
+ 带鉴权的构造接收server实例
+ 
+ @param token 鉴权信息, 请联系商务获取
+ @param error 鉴权过程中的错误信息
+ @return 新构造的实例
+ */
+- (instancetype) initWithToken:(NSString*) token
+                         error:(NSError**) error;
+
 /** airplay 接受端 */
 @property KSYAirTunesServer  *airTunesServer;
 /** airplay 配置信息 */
