@@ -97,6 +97,7 @@
     _streamerBase.videoMaxBitrate  = _videoBitrate;
     _streamerBase.videoInitBitrate = _videoBitrate*6/10;
     _streamerBase.videoMinBitrate  = 0;
+    _streamerBase.videoEncodePerf  = KSYVideoEncodePer_HighPerformance;
     [_streamerBase startStream:[NSURL URLWithString:_streamUrl]];
     if (_delegate && [_delegate respondsToSelector:@selector(didStartMirroring:)]) {
         dispatch_async(dispatch_get_main_queue(), ^() {
