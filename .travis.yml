@@ -1,5 +1,7 @@
 language: objective-c
 osx_image: xcode8
+before_install:
+  - pod repo update
 podfile: demo/Podfile
 xcode_workspace: demo/KSYAirStreamer.xcworkspace
 xcode_scheme: KSYAirStreamer-Example

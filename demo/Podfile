@@ -4,7 +4,7 @@ use_frameworks!
 
 target 'KSYAirStreamer_Example' do
   pod 'GPUImage'
-  pod 'libksygpulive/libksygpulive', '~> 2.4.0'
+  pod 'libksygpulive/libksygpulive', '~> 2.5.0'
   pod 'KSYAirStreamer',  :path => '../'
 
   target 'KSYAirStreamer_Tests' do

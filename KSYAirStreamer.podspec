@@ -29,6 +29,6 @@ Pod::Spec.new do |s|
   s.source_files =  ['prebuilt/include/**/*.h','source/*.{h,m}']
   s.vendored_library = 'prebuilt/libs/libksyairserver.a'
   #s.vendored_library = 'prebuilt/libs/libksyairserver_auth.a'
-  s.dependency 'libksygpulive/libksygpulive'
+  s.dependency 'libksygpulive/libksygpulive', '~> 2.5.0'
   s.dependency 'CocoaAsyncSocket'
 end
