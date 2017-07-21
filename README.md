@@ -8,7 +8,7 @@
 
 [金山云录屏直播SDK][KSYAirStreamer]是金山云提供的直播解决方案的一部分，完成了iOS端全屏录制的功能，主要实现思路是本SDK内实现了一个Airplay的接收端, 开始录屏时iOS系统与SDK建立连接, SDK收到画面后, 编码发送到直播服务器. 其中编码和推流功能使用[金山云直播SDK][libksygpulive]实现.
 
-![Airplay+live][1]
+![Airplay+live][airplaylive]
 
 可以用于手游等直播录制场景。
 
@@ -96,3 +96,4 @@ $ open KSYAirStreame.xcworkspace
 [libksygpulive]:https://github.com/ksvc/KSYLive_iOS
 [KSYAirStreamer]:https://github.com/ksvc/KSYAirStreamer_iOS
 [ksyun]:http://www.ksyun.com
+[airplaylive]:https://ks3-cn-beijing.ksyun.com/ksy.vcloud.sdk/picture/airMirror/airplay_live.png
