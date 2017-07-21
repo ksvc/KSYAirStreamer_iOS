@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.author           = { 'pengbins' => 'pengbin@kingsoft.com' }
   s.source           = {
       :git => 'https://github.com/ksvc/KSYAirStreamer_iOS.git',
-      :tag => s.version.to_s
+      :tag => 'v'+s.version.to_s
   }
   s.requires_arc = true
   s.ios.library = 'z', 'iconv', 'stdc++.6', 'bz2'
