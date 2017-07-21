@@ -34,7 +34,7 @@
     _lblRes = [self addLable:@"分辨率"];
     _resolutionUI = [self addSegCtrlWithItems:@[@"低",@"中", @"高"]];
     _resolutionUI.selectedSegmentIndex = 0;
-    _framerateUI    = [self addSliderName:@"帧率" From:2 To:60 Init:24];
+    _framerateUI    = [self addSliderName:@"帧率" From:2 To:30 Init:24];
     _videoBitrateUI = [self addSliderName:@"码率" From:300 To:2000 Init:800];
 
     _btn = [self addButton:@"开始"];
