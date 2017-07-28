@@ -25,9 +25,11 @@
 
 请勿集成并上线，因为网络原因导致的功能不可用，[金山云][ksyun]不承担任何责任。
 
-如果需要商业使用，请联系[金山云商务][ksyun]获取离线解密版本。离线版本使用过程中不会发生联网行为，可以稳定用于商业应用。
+#### 1.3.1 购买
 
-商业版本费用，请咨询[金山云商务][ksyun]。
+如果需要商业使用，请登录[金山云魔方控制台][kmc]获取离线解密版本。离线版本使用过程中不会发生联网行为，可以稳定用于商业应用。
+
+商业版本费用，请参考[金山云魔方控制台][kmc]报价。
 
 ## 二. SDK集成方法介绍   
 ### 2.1 系统要求    
@@ -95,5 +97,5 @@ $ open KSYAirStreame.xcworkspace
 
 [libksygpulive]:https://github.com/ksvc/KSYLive_iOS
 [KSYAirStreamer]:https://github.com/ksvc/KSYAirStreamer_iOS
-[ksyun]:http://www.ksyun.com
+[kmc]:https://kmc.console.ksyun.com/#sdk/KSYAirStreameriOS/fac09a
 [airplaylive]:https://ks3-cn-beijing.ksyun.com/ksy.vcloud.sdk/picture/airMirror/airplay_live.png
