@@ -5,3 +5,5 @@ before_install:
 podfile: demo/Podfile
 xcode_workspace: demo/KSYAirStreamer.xcworkspace
 xcode_scheme: KSYAirStreamer-Example
+script: 
+  - xcodebuild clean build -configuration Release -workspace demo/KSYAirStreamer.xcworkspace -scheme KSYAirStreamer-Example
