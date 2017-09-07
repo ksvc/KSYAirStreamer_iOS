@@ -16,10 +16,14 @@
 @property UITextField * txtAddr;
 // 分辨率选择
 @property UISegmentedControl *resolutionUI;
+// 硬解/软解
+@property UISegmentedControl *videoDecoderUI;
 // 帧率选择
 @property KSYNameSlider *framerateUI;
 // 码率选择
 @property KSYNameSlider *videoBitrateUI;
+// 话筒音量
+@property KSYNameSlider *micVolumeUI;
 // 开始推流
 @property UIButton * btn;
 

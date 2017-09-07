@@ -7,12 +7,15 @@
 //
 
 #import "KSYAppDelegate.h"
+#import <Bugly/Bugly.h>
 
 @implementation KSYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    BuglyConfig * cfg = [[BuglyConfig alloc] init];
+    cfg.channel = @"internal";
+    [Bugly startWithAppId:@"948b45ab60" config:cfg];
     return YES;
 }
 

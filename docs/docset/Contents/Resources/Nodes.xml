@@ -37,6 +37,7 @@
 					<Subnodes>
 						<NodeRef refid="6"/>
 						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
 						
 					</Subnodes>
 				</Node>
@@ -183,6 +184,11 @@
 		<Node id="7" type="file" documentType="reference">
             <Name>KSYAirState</Name>
             <Path>Constants/KSYAirState.html</Path>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>KSYAirVideoDecoder</Name>
+            <Path>Constants/KSYAirVideoDecoder.html</Path>
             
         </Node>
 		

@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/ksyci/Library/Developer/Shared/Documentation/DocSets/com.ksyun.KSYAirStreamer_iOS.docset
-Time: 2017-07-19 02:36:15 +0000
+Path: /Users/ksvc/Library/Developer/Shared/Documentation/DocSets/com.ksyun.KSYAirStreamer_iOS.docset
+Time: 2017-09-07 14:18:31 +0000

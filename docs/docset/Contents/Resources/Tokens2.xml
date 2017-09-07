@@ -50,10 +50,12 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setVideoSize:</TokenIdentifier>
-			<Abstract type="html">接收设备的尺寸(竖屏时高度为videoSize, 宽度根据屏幕比例计算得到,横屏时反之)</Abstract>
+			<Abstract type="html">接收设备的尺寸 (默认为 960x960)
+如果videoSize的宽高相同, 则横竖屏旋转时,输出的分辨率保持不变;
+当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int videoSize</Declaration>
+			<Declaration>@property (nonatomic, assign) CGSize videoSize</Declaration>
 			
 			
 			<Anchor>//api/name/videoSize</Anchor>
@@ -62,10 +64,12 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/videoSize</TokenIdentifier>
-			<Abstract type="html">接收设备的尺寸(竖屏时高度为videoSize, 宽度根据屏幕比例计算得到,横屏时反之)</Abstract>
+			<Abstract type="html">接收设备的尺寸 (默认为 960x960)
+如果videoSize的宽高相同, 则横竖屏旋转时,输出的分辨率保持不变;
+当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int videoSize</Declaration>
+			<Declaration>@property (nonatomic, assign) CGSize videoSize</Declaration>
 			
 			
 			<Anchor>//api/name/videoSize</Anchor>
@@ -74,10 +78,12 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/videoSize</TokenIdentifier>
-			<Abstract type="html">接收设备的尺寸(竖屏时高度为videoSize, 宽度根据屏幕比例计算得到,横屏时反之)</Abstract>
+			<Abstract type="html">接收设备的尺寸 (默认为 960x960)
+如果videoSize的宽高相同, 则横竖屏旋转时,输出的分辨率保持不变;
+当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, assign) int videoSize</Declaration>
+			<Declaration>@property (nonatomic, assign) CGSize videoSize</Declaration>
 			
 			
 			<Anchor>//api/name/videoSize</Anchor>
@@ -86,7 +92,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setFramerate:</TokenIdentifier>
-			<Abstract type="html">希望接收到ios发送端的视频帧率 默认30</Abstract>
+			<Abstract type="html">希望接收到ios发送端的视频帧率 (有效值为 10, 15, 30), 默认为30</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) int framerate</Declaration>
@@ -98,7 +104,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/framerate</TokenIdentifier>
-			<Abstract type="html">希望接收到ios发送端的视频帧率 默认30</Abstract>
+			<Abstract type="html">希望接收到ios发送端的视频帧率 (有效值为 10, 15, 30), 默认为30</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) int framerate</Declaration>
@@ -110,7 +116,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/framerate</TokenIdentifier>
-			<Abstract type="html">希望接收到ios发送端的视频帧率 默认30</Abstract>
+			<Abstract type="html">希望接收到ios发送端的视频帧率 (有效值为 10, 15, 30), 默认为30</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) int framerate</Declaration>
@@ -225,6 +231,42 @@
 			
 			
 			<Anchor>//api/name/macAddr</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setVideoDecoder:</TokenIdentifier>
+			<Abstract type="html">AirPlay接收数据的解码器(默认为KSYAirVideoDecoder_SOFTWARE)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) KSYAirVideoDecoder videoDecoder</Declaration>
+			
+			
+			<Anchor>//api/name/videoDecoder</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/videoDecoder</TokenIdentifier>
+			<Abstract type="html">AirPlay接收数据的解码器(默认为KSYAirVideoDecoder_SOFTWARE)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) KSYAirVideoDecoder videoDecoder</Declaration>
+			
+			
+			<Anchor>//api/name/videoDecoder</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/videoDecoder</TokenIdentifier>
+			<Abstract type="html">AirPlay接收数据的解码器(默认为KSYAirVideoDecoder_SOFTWARE)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) KSYAirVideoDecoder videoDecoder</Declaration>
+			
+			
+			<Anchor>//api/name/videoDecoder</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

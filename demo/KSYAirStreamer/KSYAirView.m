@@ -33,9 +33,19 @@
     
     _lblRes = [self addLable:@"分辨率"];
     _resolutionUI = [self addSegCtrlWithItems:@[@"低",@"中", @"高"]];
-    _resolutionUI.selectedSegmentIndex = 0;
-    _framerateUI    = [self addSliderName:@"帧率" From:2 To:30 Init:24];
-    _videoBitrateUI = [self addSliderName:@"码率" From:300 To:2000 Init:800];
+    _videoDecoderUI = [self addSegCtrlWithItems:@[@"软解码",@"硬解码"]];
+    _videoDecoderUI.selectedSegmentIndex = 1;
+    CGSize sz = [[UIScreen mainScreen] bounds].size;
+    int hgt = MAX(sz.width, sz.height);
+    if (hgt <=568) {
+        _videoDecoderUI.hidden = YES;
+        _videoDecoderUI.selectedSegmentIndex = 0;
+    }
+    _resolutionUI.selectedSegmentIndex = 2;
+    _framerateUI    = [self addSliderName:@"帧率" From:10 To:30 Init:30];
+    _videoBitrateUI = [self addSliderName:@"码率" From:500 To:3000 Init:1400];
+    _micVolumeUI = [self addSliderName:@"音量" From:0 To:2 Init:1];
+    
 
     _btn = [self addButton:@"开始"];
     [_btn setTitle:@"停止" forState:UIControlStateSelected ];
@@ -58,12 +68,18 @@
 }
 - (void) layoutUI {
     [super layoutUI];
-    self.btnH = self.btnH*2;
+    if ( self.width < self.height) {
+        self.btnH = self.btnH*2;
+    }
     [self putWide: _txtAddr andNarrow: _doneBtn];
     [self putLable:_lblRes andView:_resolutionUI ];
+    if (_videoDecoderUI.hidden == NO)
+        [self putRow:@[_videoDecoderUI] ];
     [self putRow:@[_framerateUI] ];
     [self putRow:@[_videoBitrateUI] ];
+    [self putRow:@[_micVolumeUI] ];
     [self putRow:@[_btn] ];
+    
     self.btnH = self.height - self.yPos - self.gap;
     [self putRow1:_lblState];
 }
@@ -89,7 +105,14 @@
     cfg.framerate = _framerateUI.value;
     NSString * name = [_txtAddr.text substringFromIndex:_txtAddr.text.length-3];
     cfg.airplayName = [NSString stringWithFormat:@"ksyair_%@", name];
-    cfg.videoSize = [self getResolution];
+    int sz =[self getResolution];
+    cfg.videoSize = CGSizeMake(sz, sz);
+    if (_videoDecoderUI.selectedSegmentIndex == 0) {
+        cfg.videoDecoder = KSYAirVideoDecoder_SOFTWARE;
+    }
+    else {
+        cfg.videoDecoder = KSYAirVideoDecoder_VIDEOTOOLBOX;
+    }
     return cfg;
 }
 - (int) getResolution {
