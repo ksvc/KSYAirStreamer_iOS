@@ -14,6 +14,8 @@
 // 推流状态控件
 @property UILabel * lblState;
 @property UILabel * lblRes;
+@property UILabel * lblPadding;
+@property UILabel * lblFPS;
 
 @end
 
@@ -33,6 +35,7 @@
     
     _lblRes = [self addLable:@"分辨率"];
     _resolutionUI = [self addSegCtrlWithItems:@[@"低",@"中", @"高"]];
+    _resolutionUI.selectedSegmentIndex = 2;
     _videoDecoderUI = [self addSegCtrlWithItems:@[@"软解码",@"硬解码"]];
     _videoDecoderUI.selectedSegmentIndex = 1;
     CGSize sz = [[UIScreen mainScreen] bounds].size;
@@ -41,12 +44,14 @@
         _videoDecoderUI.hidden = YES;
         _videoDecoderUI.selectedSegmentIndex = 0;
     }
-    _resolutionUI.selectedSegmentIndex = 2;
-    _framerateUI    = [self addSliderName:@"帧率" From:10 To:30 Init:30];
+    _lblFPS = [self addLable:@"帧率"];
+    _framerateUI    = [self addSegCtrlWithItems:@[@"10",@"15", @"30"]];
+    _framerateUI.selectedSegmentIndex = 1;
+    _lblPadding = [self addLable:@"固定宽屏"];
+    _paddingUI = [self addSwitch:NO];
     _videoBitrateUI = [self addSliderName:@"码率" From:500 To:3000 Init:1400];
     _micVolumeUI = [self addSliderName:@"音量" From:0 To:2 Init:1];
     
-
     _btn = [self addButton:@"开始"];
     [_btn setTitle:@"停止" forState:UIControlStateSelected ];
     _airState = @"";
@@ -69,13 +74,13 @@
 - (void) layoutUI {
     [super layoutUI];
     if ( self.width < self.height) {
-        self.btnH = self.btnH*2;
+        self.btnH = self.btnH*1.5;
     }
     [self putWide: _txtAddr andNarrow: _doneBtn];
     [self putLable:_lblRes andView:_resolutionUI ];
     if (_videoDecoderUI.hidden == NO)
         [self putRow:@[_videoDecoderUI] ];
-    [self putRow:@[_framerateUI] ];
+    [self putRow:@[_lblFPS,_framerateUI, _lblPadding, _paddingUI ] ];
     [self putRow:@[_videoBitrateUI] ];
     [self putRow:@[_micVolumeUI] ];
     [self putRow:@[_btn] ];
@@ -102,11 +107,26 @@
 
 - (KSYAirTunesConfig *) airCfg {
     KSYAirTunesConfig *cfg = [[KSYAirTunesConfig alloc] init];
-    cfg.framerate = _framerateUI.value;
+    cfg.framerate = [_framerateUI titleForSegmentAtIndex:_framerateUI.selectedSegmentIndex].intValue;
     NSString * name = [_txtAddr.text substringFromIndex:_txtAddr.text.length-3];
     cfg.airplayName = [NSString stringWithFormat:@"ksyair_%@", name];
-    int sz =[self getResolution];
-    cfg.videoSize = CGSizeMake(sz, sz);
+    int targetWdt =[self getResolution];
+    if(_paddingUI.isOn) {
+        cfg.padding = YES;
+        CGSize screenSz = [UIScreen mainScreen].bounds.size;
+        CGFloat wdt = MAX(screenSz.width, screenSz.height);
+        CGFloat hgt = MIN(screenSz.width, screenSz.height);
+        CGFloat targetHgt =ceil(targetWdt*hgt/wdt);
+        if (targetHgt< 720) { // wdt and hgt must larger than 720
+            targetHgt = targetWdt;
+            cfg.padding = NO;
+            _paddingUI.on = NO;
+        }
+        cfg.videoSize = CGSizeMake(targetWdt, targetHgt);
+    }
+    else {
+        cfg.videoSize = CGSizeMake(targetWdt, targetWdt);
+    }
     if (_videoDecoderUI.selectedSegmentIndex == 0) {
         cfg.videoDecoder = KSYAirVideoDecoder_SOFTWARE;
     }
@@ -121,8 +141,19 @@
             return 720;
         case 1:
             return 960;
+        case 2:
+            return 1280;
         default:
             return 1280;
+    }
+}
+- (IBAction)onSegCtrl:(id)sender {
+    [super onSegCtrl:sender];
+    if (sender == _resolutionUI ) {
+        _paddingUI.enabled = NO;
+        if (_resolutionUI.selectedSegmentIndex == 2) {
+            _paddingUI.enabled = YES;
+        }
     }
 }
 @end

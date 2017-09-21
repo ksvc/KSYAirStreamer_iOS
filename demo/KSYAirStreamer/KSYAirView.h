@@ -18,8 +18,10 @@
 @property UISegmentedControl *resolutionUI;
 // 硬解/软解
 @property UISegmentedControl *videoDecoderUI;
+// 是否固定宽屏(锁定分辨率, 竖屏时填黑边)
+@property UISwitch *paddingUI;
 // 帧率选择
-@property KSYNameSlider *framerateUI;
+@property UISegmentedControl *framerateUI;
 // 码率选择
 @property KSYNameSlider *videoBitrateUI;
 // 话筒音量

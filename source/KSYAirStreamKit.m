@@ -19,6 +19,7 @@
     int            _autoRetryCnt;
     BOOL           _bRetry;
     int            _maxAutoRetry;
+    int            _codecOpenFailCnt;
 }
 
 @end
@@ -60,6 +61,12 @@
     _airTunesServer.videoProcessingCallback = ^(CVPixelBufferRef pixelBuffer, CMTime timeInfo) {
         [weakSelf.streamerBase processVideoPixelBuffer:pixelBuffer timeInfo:timeInfo];
     };
+    _aMixer.pcmProcessingCallback = ^(uint8_t **pData, int nbSample, CMTime pts) {
+        [weakSelf.streamerBase processAudioData:pData
+                                       nbSample:nbSample
+                                     withFormat:weakSelf.aMixer.outFmtDes
+                                       timeinfo:&pts];
+    };
     _streamerBase.videoCodec = KSYVideoCodec_AUTO;
     _streamerBase.videoEncodePerf = KSYVideoEncodePer_HighPerformance;
     _streamerBase.audioCodec = KSYAudioCodec_AT_AAC;
@@ -71,6 +78,7 @@
     _autoRetryCnt    = 0;
     _maxAutoRetry    = 5;
     _bRetry          = NO;
+    _codecOpenFailCnt=0;
     NSNotificationCenter* dc = [NSNotificationCenter defaultCenter];
     [dc addObserver:self
            selector:@selector(onNetStateEvent)
@@ -83,13 +91,6 @@
 }
 
 - (void) startService {
-    __weak typeof(self) weakSelf = self;
-    _aMixer.pcmProcessingCallback = ^(uint8_t **pData, int nbSample, CMTime pts) {
-        [weakSelf.streamerBase processAudioData:pData
-                                       nbSample:nbSample
-                                     withFormat:weakSelf.aMixer.outFmtDes
-                                       timeinfo:&pts];
-    };
     [_airTunesServer startServerWithCfg:_airCfg];
 }
 - (void) stopService {
@@ -130,14 +131,14 @@
     }
 }
 - (void)didStopMirroring:(KSYAirTunesServer *)server {
-    if (_delegate && [_delegate respondsToSelector:@selector(didStartMirroring:)]) {
-        dispatch_async(dispatch_get_main_queue(), ^() {
-            [_delegate didStopMirroring:server ];
-        });
-    }
     [_streamerBase stopStream];
     [_aCapDev stopCapture];
     _aCapDev = nil;
+    if (_delegate && [_delegate respondsToSelector:@selector(didStartMirroring:)]) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [_delegate didStopMirroring:server ];
+        });
+    }
 }
 
 #pragma mark - stream state
@@ -152,6 +153,7 @@
     else if (state == KSYStreamStateConnected){
         _autoRetryCnt = _maxAutoRetry;
         _bRetry = NO;
+        _codecOpenFailCnt = 0;
     }
 }
 - (void) onNetStateEvent {
@@ -182,7 +184,10 @@
         }
     }
     else if (errCode == KSYStreamErrorCode_CODEC_OPEN_FAILED) {
-        _streamerBase.videoCodec = KSYVideoCodec_X264;
+        if (_codecOpenFailCnt>3) {// 硬编码打开失败连续3次之后,切到软编码
+            _streamerBase.videoCodec = KSYVideoCodec_X264;
+        }
+        _codecOpenFailCnt++;
         _autoRetryCnt = _maxAutoRetry;
         if (_bRetry == NO){
             [self tryRtmpReconnect:1];

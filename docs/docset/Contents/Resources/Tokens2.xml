@@ -52,7 +52,8 @@
 			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setVideoSize:</TokenIdentifier>
 			<Abstract type="html">接收设备的尺寸 (默认为 960x960)
 如果videoSize的宽高相同, 则横竖屏旋转时,输出的分辨率保持不变;
-当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化</Abstract>
+当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化
+请注意,宽高比需要和屏幕的比例相同, 否则内部自动按照画面小的数值计算</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGSize videoSize</Declaration>
@@ -66,7 +67,8 @@
 			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/videoSize</TokenIdentifier>
 			<Abstract type="html">接收设备的尺寸 (默认为 960x960)
 如果videoSize的宽高相同, 则横竖屏旋转时,输出的分辨率保持不变;
-当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化</Abstract>
+当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化
+请注意,宽高比需要和屏幕的比例相同, 否则内部自动按照画面小的数值计算</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGSize videoSize</Declaration>
@@ -80,13 +82,50 @@
 			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/videoSize</TokenIdentifier>
 			<Abstract type="html">接收设备的尺寸 (默认为 960x960)
 如果videoSize的宽高相同, 则横竖屏旋转时,输出的分辨率保持不变;
-当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化</Abstract>
+当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化
+请注意,宽高比需要和屏幕的比例相同, 否则内部自动按照画面小的数值计算</Abstract>
 			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) CGSize videoSize</Declaration>
 			
 			
 			<Anchor>//api/name/videoSize</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/setPadding:</TokenIdentifier>
+			<Abstract type="html">是否需要在宽高不同时, 在屏幕两边填上黑边 (默认为 NO)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL padding</Declaration>
+			
+			
+			<Anchor>//api/name/padding</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYAirTunesConfig/padding</TokenIdentifier>
+			<Abstract type="html">是否需要在宽高不同时, 在屏幕两边填上黑边 (默认为 NO)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL padding</Declaration>
+			
+			
+			<Anchor>//api/name/padding</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYAirTunesConfig/padding</TokenIdentifier>
+			<Abstract type="html">是否需要在宽高不同时, 在屏幕两边填上黑边 (默认为 NO)</Abstract>
+			<DeclaredIn>KSYAirTunesServer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL padding</Declaration>
+			
+			
+			<Anchor>//api/name/padding</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

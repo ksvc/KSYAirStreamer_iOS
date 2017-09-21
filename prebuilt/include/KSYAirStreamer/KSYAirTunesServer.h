@@ -57,7 +57,10 @@ typedef NS_ENUM(NSUInteger, KSYAirVideoDecoder) {
 /// 接收设备的尺寸 (默认为 960x960)
 /// 如果videoSize的宽高相同, 则横竖屏旋转时,输出的分辨率保持不变;
 /// 当宽高不同时, 横竖屏旋转后, 高度保持不变, 宽度会跟随设备的屏幕比例变化
+/// 请注意,宽高比需要和屏幕的比例相同, 否则内部自动按照画面小的数值计算
 @property(nonatomic, assign) CGSize videoSize;
+/// 是否需要在宽高不同时, 在屏幕两边填上黑边 (默认为 NO)
+@property(nonatomic, assign) BOOL padding;
 /// 希望接收到ios发送端的视频帧率 (有效值为 10, 15, 30), 默认为30
 @property(nonatomic, assign) int framerate;
 /// 设置airtunes 服务的监听端口, 0 表示系统自动分配
@@ -163,5 +166,5 @@ typedef NS_ENUM(NSUInteger, KSYAirVideoDecoder) {
 
 @end
 
-#define KSYAIRSTREAMER_VER 1.1.0
-#define KSYAIRSTREAMER_ID  b3654cfef379d127c8540fa90fb7357b5f6326ca
+#define KSYAIRSTREAMER_VER 1.2.0
+#define KSYAIRSTREAMER_ID  4ab1cb26ba0b42e1c1fb82a3ae5ca312c33292ef
