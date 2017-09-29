@@ -166,5 +166,5 @@ typedef NS_ENUM(NSUInteger, KSYAirVideoDecoder) {
 
 @end
 
-#define KSYAIRSTREAMER_VER 1.2.0
-#define KSYAIRSTREAMER_ID  4ab1cb26ba0b42e1c1fb82a3ae5ca312c33292ef
+#define KSYAIRSTREAMER_VER 1.3.0
+#define KSYAIRSTREAMER_ID  e5896f1851d1f3d093713cd1ecfc51c31a3fd896
