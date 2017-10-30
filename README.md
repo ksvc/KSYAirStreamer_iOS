@@ -1,5 +1,8 @@
 # [KSYAirStreamer iOS SDK](https://ksvc.github.io/KSYAirStreamer_iOS/html/index.html)
 
+[![Apps Using](https://img.shields.io/cocoapods/at/KSYAirStreamer.svg?label=Apps%20Using%20KSYAirStreamer&colorB=28B9FE)](http://cocoapods.org/pods/KSYAirStreamer)[![Downloads](https://img.shields.io/cocoapods/dt/KSYAirStreamer.svg?label=Total%20Downloads%20KSYAirStreamer&colorB=28B9FE)](http://cocoapods.org/pods/KSYAirStreamer)
+
+
 [![Build Status](https://travis-ci.org/ksvc/KSYAirStreamer_iOS.svg?branch=master)](https://travis-ci.org/ksvc/KSYAirStreamer_iOS)
 [![CocoaPods platform](https://img.shields.io/cocoapods/p/KSYAirStreamer.svg)](https://cocoapods.org/pods/KSYAirStreamer)
 [![CocoaPods version](https://img.shields.io/cocoapods/v/KSYAirStreamer.svg?label=pod_github)](https://cocoapods.org/pods/KSYAirStreamer)
