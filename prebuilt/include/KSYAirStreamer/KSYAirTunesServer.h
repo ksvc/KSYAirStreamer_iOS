@@ -185,4 +185,4 @@ typedef NS_ENUM(NSUInteger, KSYAirVideoDecoder) {
 int KSYAirParseParamSets(NSData* data, uint8_t* psData[], size_t psSize[], size_t * psCnt);
 
 #define KSYAIRSTREAMER_VER 1.4.0
-#define KSYAIRSTREAMER_ID  f0820f337963ed217b508f1c3b0b128518f15e59
+#define KSYAIRSTREAMER_ID  9d619a94d94a5fedbcc2657f116dfe682dd63d96
