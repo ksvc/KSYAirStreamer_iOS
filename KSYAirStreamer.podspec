@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'KSYAirStreamer'
-  s.version          = '1.3.0'
+  s.version          = '1.4.0'
   s.summary          = 'airplay receiver => rtmp streamer'
 
   s.description      = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.author           = { 'pengbins' => 'pengbin@kingsoft.com' }
   s.source           = {
       :git => 'https://github.com/ksvc/KSYAirStreamer_iOS.git',
-      :tag => s.version.to_s
+      :tag => 'v' + s.version.to_s
   }
   s.requires_arc = true
   s.ios.library = 'z', 'iconv', 'stdc++.6', 'bz2'

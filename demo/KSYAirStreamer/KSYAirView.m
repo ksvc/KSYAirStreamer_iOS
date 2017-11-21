@@ -38,6 +38,8 @@
     _resolutionUI.selectedSegmentIndex = 2;
     _videoDecoderUI = [self addSegCtrlWithItems:@[@"软解码",@"硬解码"]];
     _videoDecoderUI.selectedSegmentIndex = 1;
+    _btnRec = [self addButton:@"_ 无解码 "];
+    
     CGSize sz = [[UIScreen mainScreen] bounds].size;
     int hgt = MAX(sz.width, sz.height);
     if (hgt <=568) {
@@ -78,8 +80,7 @@
     }
     [self putWide: _txtAddr andNarrow: _doneBtn];
     [self putLable:_lblRes andView:_resolutionUI ];
-    if (_videoDecoderUI.hidden == NO)
-        [self putRow:@[_videoDecoderUI] ];
+    [self putWide:_videoDecoderUI andNarrow:_btnRec];
     [self putRow:@[_lblFPS,_framerateUI, _lblPadding, _paddingUI ] ];
     [self putRow:@[_videoBitrateUI] ];
     [self putRow:@[_micVolumeUI] ];

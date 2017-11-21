@@ -93,6 +93,8 @@
                             
                             &nbsp;&nbsp; <a href="">KSYAirVideoDecoder_VIDEOTOOLBOX</a>,<br>
                             
+                            &nbsp;&nbsp; <a href="">KSYAirVideoDecoder_NONE</a> = 0 x1000,<br>
+                            
                             };</code>
                     
                     </div>
@@ -105,7 +107,7 @@
 <dd>
 
 
-<p>软解</p>
+<p>软解, 解码后画面通过videoProcessingCallback回调给出</p>
 
 
 
@@ -122,7 +124,24 @@
 <dd>
 
 
-<p>硬解</p>
+<p>硬解, 解码后画面通过videoProcessingCallback回调给出</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">KSYAirTunesServer.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="KSYAirVideoDecoder_NONE"></a><code>KSYAirVideoDecoder_NONE</code></dt>
+<dd>
+
+
+<p>无解码,将接收到的264码流直接通过videoBitStreamCallback回调函数给出</p>
 
 
 

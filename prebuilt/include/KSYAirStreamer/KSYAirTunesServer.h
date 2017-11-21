@@ -42,10 +42,12 @@ typedef NS_ENUM(NSUInteger, KSYAirState) {
 
 /** airplay的状态信息 */
 typedef NS_ENUM(NSUInteger, KSYAirVideoDecoder) {
-    /// 软解
+    /// 软解, 解码后画面通过videoProcessingCallback回调给出
     KSYAirVideoDecoder_SOFTWARE,
-    /// 硬解
+    /// 硬解, 解码后画面通过videoProcessingCallback回调给出
     KSYAirVideoDecoder_VIDEOTOOLBOX,
+    /// 无解码,将接收到的264码流直接通过videoBitStreamCallback回调函数给出
+    KSYAirVideoDecoder_NONE = 0x1000,
 };
 
 
@@ -136,6 +138,11 @@ typedef NS_ENUM(NSUInteger, KSYAirVideoDecoder) {
 @property(nonatomic, copy) void(^videoProcessingCallback)(CVPixelBufferRef pixelBuffer, CMTime timeInfo );
 
 /**
+ 获取屏幕码流的回调
+ */
+@property(nonatomic, copy) void(^videoBitStreamCallback)(NSData* data, BOOL bParameterSet, CMTime timeInfo);
+
+/**
  录制过程的通知代理
  */
 @property(nonatomic, weak) id<KSYAirDelegate> delegate;
@@ -166,5 +173,16 @@ typedef NS_ENUM(NSUInteger, KSYAirVideoDecoder) {
 
 @end
 
-#define KSYAIRSTREAMER_VER 1.3.0
-#define KSYAIRSTREAMER_ID  e5896f1851d1f3d093713cd1ecfc51c31a3fd896
+/**
+ 解析264的参数集
+
+ @param data airplay原始的 参数集(sps, pps)数据
+ @param psData 解析后的参数集数据, 请保证传入的是指针数组, 且每个元素都为NULL
+ @param psSize 解析后的每个参数集的长度
+ @param psCnt  解析出来的参数集的个数
+ @return nallength的字节数
+ */
+int KSYAirParseParamSets(NSData* data, uint8_t* psData[], size_t psSize[], size_t * psCnt);
+
+#define KSYAIRSTREAMER_VER 1.4.0
+#define KSYAIRSTREAMER_ID  f0820f337963ed217b508f1c3b0b128518f15e59

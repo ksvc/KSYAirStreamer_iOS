@@ -28,6 +28,8 @@
 @property KSYNameSlider *micVolumeUI;
 // 开始推流
 @property UIButton * btn;
+// 开始录制
+@property UIButton * btnRec;
 
 // 推流状态
 @property NSString * strState;
