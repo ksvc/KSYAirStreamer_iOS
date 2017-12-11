@@ -73,7 +73,7 @@ demo 目录中已经有一个Podfile, 指定了本地开发版的pod
 ```
 $ cd demo
 $ pod install
-$ open KSYAirStreame.xcworkspace
+$ open KSYAirStreamer.xcworkspace
 ```
 
 注意:
@@ -82,7 +82,7 @@ $ open KSYAirStreame.xcworkspace
 
 ### 2.4 添加头文件到需要使用本SDK的文件中
 ```
-#import <KSYAirStreamer/KSYAirStreameKit.h>
+#import <KSYAirStreamer/KSYAirStreamKit.h>
 ```
 
 ### 2.5 SDK版本号查询
