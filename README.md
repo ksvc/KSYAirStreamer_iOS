@@ -64,7 +64,7 @@ $ git clone https://github.com/ksvc/KSYAirStreamer_iOS.git --depth 1
 通过Cocoapods 能将本SDK的静态库和代码下载到本地，只需要将类似如下语句中的一句加入你的Podfile：   
 ```ruby
 pod 'libksygpulive', '~> 2.4.0'
-pod 'KSYAirStreame', '~> 0.1.0'
+pod 'KSYAirStreamer', '~> 0.1.0'
 ```
 
 ### 2.3 开始运行demo工程
