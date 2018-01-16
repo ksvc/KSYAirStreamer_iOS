@@ -15,6 +15,8 @@
 		061A2A211F014112003968DB /* KSYUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 061A2A1C1F014112003968DB /* KSYUIView.m */; };
 		06665C761EF28ABA006F4567 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06665C751EF28ABA006F4567 /* MediaPlayer.framework */; };
 		06FDC2A71FC2F5B900F4C284 /* KSYBitStreamDumpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 06FDC2A61FC2F5B900F4C284 /* KSYBitStreamDumpVC.m */; };
+		1856ADACAF547F349F750223 /* Pods_KSYAirStreamer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949A3110D7438BD342FF3237 /* Pods_KSYAirStreamer_Tests.framework */; };
+		2C8E96B68CA6F3C40C3944C7 /* Pods_KSYAirStreamer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9C219640876D71F145EC94 /* Pods_KSYAirStreamer_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -58,6 +60,9 @@
 		06665C751EF28ABA006F4567 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		06FDC2A51FC2F5B900F4C284 /* KSYBitStreamDumpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYBitStreamDumpVC.h; sourceTree = "<group>"; };
 		06FDC2A61FC2F5B900F4C284 /* KSYBitStreamDumpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYBitStreamDumpVC.m; sourceTree = "<group>"; };
+		1B9C219640876D71F145EC94 /* Pods_KSYAirStreamer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KSYAirStreamer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A8C79A914272CB4050CD7D /* Pods-KSYAirStreamer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSYAirStreamer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KSYAirStreamer_Example/Pods-KSYAirStreamer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		44CEDC9302B665E0CE5F47DC /* Pods-KSYAirStreamer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSYAirStreamer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KSYAirStreamer_Tests/Pods-KSYAirStreamer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KSYAirStreamer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSYAirStreamer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,7 +84,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		949A3110D7438BD342FF3237 /* Pods_KSYAirStreamer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KSYAirStreamer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B37E7E78916C46BAC12685A /* Pods-KSYAirStreamer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSYAirStreamer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KSYAirStreamer_Tests/Pods-KSYAirStreamer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B22399E595AD6E87F8CD101E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B4352514A47B71C0A378F7DB /* Pods-KSYAirStreamer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KSYAirStreamer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KSYAirStreamer_Example/Pods-KSYAirStreamer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B5A8192A4FCBF321BA3C10C8 /* KSYAirStreamer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KSYAirStreamer.podspec; path = ../KSYAirStreamer.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +100,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				2C8E96B68CA6F3C40C3944C7 /* Pods_KSYAirStreamer_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +111,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				1856ADACAF547F349F750223 /* Pods_KSYAirStreamer_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +143,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
+				E7EB7C8BCB256230C071DA5B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +164,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
+				1B9C219640876D71F145EC94 /* Pods_KSYAirStreamer_Example.framework */,
+				949A3110D7438BD342FF3237 /* Pods_KSYAirStreamer_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,6 +230,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		E7EB7C8BCB256230C071DA5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24A8C79A914272CB4050CD7D /* Pods-KSYAirStreamer_Example.debug.xcconfig */,
+				B4352514A47B71C0A378F7DB /* Pods-KSYAirStreamer_Example.release.xcconfig */,
+				44CEDC9302B665E0CE5F47DC /* Pods-KSYAirStreamer_Tests.debug.xcconfig */,
+				9B37E7E78916C46BAC12685A /* Pods-KSYAirStreamer_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "KSYAirStreamer_Example" */;
 			buildPhases = (
+				F6709F9B67CF69C550AE3913 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				2154FF5257E0162660E526AD /* [CP] Embed Pods Frameworks */,
+				DB16145C64048EA1CDDF40F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "KSYAirStreamer_Tests" */;
 			buildPhases = (
+				D35E15D2A73025750F63B9B8 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
+				DDBB337CB0367E76CD5EAFA6 /* [CP] Embed Pods Frameworks */,
+				0C3C8E946A8C5077FBEFE375 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,6 +348,114 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C3C8E946A8C5077FBEFE375 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KSYAirStreamer_Tests/Pods-KSYAirStreamer_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2154FF5257E0162660E526AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KSYAirStreamer_Example/Pods-KSYAirStreamer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/KSYAirStreamer/KSYAirStreamer.framework",
+				"${BUILT_PRODUCTS_DIR}/libksygpulive/libksygpulive.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSYAirStreamer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libksygpulive.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KSYAirStreamer_Example/Pods-KSYAirStreamer_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D35E15D2A73025750F63B9B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KSYAirStreamer_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB16145C64048EA1CDDF40F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KSYAirStreamer_Example/Pods-KSYAirStreamer_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDBB337CB0367E76CD5EAFA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KSYAirStreamer_Tests/Pods-KSYAirStreamer_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6709F9B67CF69C550AE3913 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KSYAirStreamer_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6003F586195388D20070C39A /* Sources */ = {
@@ -399,7 +537,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -439,7 +577,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -458,10 +596,11 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A8C79A914272CB4050CD7D /* Pods-KSYAirStreamer_Example.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -471,8 +610,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.ios.KSYAirStreamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b0e9a588-3fb6-4b76-8e24-8d9956dda1dd";
+				PROVISIONING_PROFILE = "b0e9a588-3fb6-4b76-8e24-8d9956dda1dd";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -480,10 +619,11 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4352514A47B71C0A378F7DB /* Pods-KSYAirStreamer_Example.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = ZGJ54Q7R45;
 				ENABLE_BITCODE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -493,8 +633,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.ios.KSYAirStreamer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b0e9a588-3fb6-4b76-8e24-8d9956dda1dd";
+				PROVISIONING_PROFILE = "b0e9a588-3fb6-4b76-8e24-8d9956dda1dd";
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -502,6 +642,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CEDC9302B665E0CE5F47DC /* Pods-KSYAirStreamer_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -525,6 +666,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B37E7E78916C46BAC12685A /* Pods-KSYAirStreamer_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
